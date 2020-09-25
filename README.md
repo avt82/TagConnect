@@ -8,3 +8,8 @@ In this project, here's the PCB of adapter for connecting TC2030-MCP-NL cable to
 #Part list:
 https://www.aliexpress.com/item/32890057619.html - 2x10 JTag Header
 Farnel, part no 1654815 - RJ12 connector
+
+#Revision History
+Rev A - total mess, does not worth of seeing.
+Rev B - should work, waiting for PCB delivery.
+Rev C - thermal settings for copper pouring is changed.
