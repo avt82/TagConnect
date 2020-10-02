@@ -10,6 +10,11 @@ https://www.aliexpress.com/item/32890057619.html - 2x10 JTag Header
 Farnel, part no 1654815 - RJ12 connector
 
 #Revision History
+
+MCP-NL to CTX-NL
 Rev A - total mess, does not worth of seeing.
 Rev B - should work, waiting for PCB delivery.
 Rev C - thermal settings for copper pouring is changed.
+
+MCP-NL to MCP-PICKit
+Rev A - should work, not yet ordered.
