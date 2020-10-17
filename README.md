@@ -1,11 +1,16 @@
 # TagConnect
 ## TC2030-MCP and TC2050-CTX adapters for different boards.
+
 ![alt text](https://pbs.twimg.com/profile_images/1625182695/Tag-Connector_with_legs.jpg)
+
 TagConnect (www.tag-connect.com) cables are *very nice*, but *pretty expensive* for hobbyists.
 Due to I am dealing with a big variety of microcontrollers, I bought 10-pin cable for ARM Cortex (TC2050-CTX), and 6-pin cable for Microchip ICD (TC2030-MCP), and then I am doing the adapters for other MCUs.
+
 _Actually, I bought TC2030-MCP-NL afterwards, but it is pretty much the same, NL stands for NoLegs, so it is good for flashing, and not that much for development and debugging. I am dealing with all listed activities, so I need it_
+
 If someone is interested to buy a pcb, or an adapter, you can contact me here, I never order a single PCB, and usually I do have spare.
 I can ship it inside EU any time, and occasionally to UA.
+
 This is how tc2030, tc2030-nl, tc2050 and tc2050-nl footprints looks like on PCB:
 ![alt text](http://www.thingamafob.com/wp-content/uploads/2012/12/IMG_7106-1024x682.jpg)
 -----
