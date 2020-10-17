@@ -82,9 +82,13 @@ MCP-NL to ESP32 (in my case - ESP32-Wroom-32 module, should work fine on any ESP
 - next step - add ESD protection to USB.
 -----
 # mcp2r16c
+
 **(Not yet designed)**
+
 Renesas R5F21xxxx 15-bit MCUs, no original cable, so the pinout is an open question for now.
 -----
 # ctx2msp430
+
 **(Not yet designed)**
+
 The original cable is TC2050 only, so here comes the Cortex (ARM) adapter at last.
