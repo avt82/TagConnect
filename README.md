@@ -9,10 +9,13 @@ Due to I am dealing with a big variety of microcontrollers, I bought 10-pin cabl
 
 _Actually, I bought TC2030-MCP-NL afterwards, but it is pretty much the same, NL stands for NoLegs, so it is good for flashing, and not that much for development and debugging. I am dealing with all listed activities, so I need it_
 
-If someone is interested to buy a pcb, or an adapter, you can contact me here, I never order a single PCB, and usually I do have spare.
-I can ship it inside EU any time, and occasionally to UA.
+Here you can find the schematic and pcb design in DIPTrace, 3d models and Gerber files.
 
-This is how tc2030, tc2030-nl, tc2050 and tc2050-nl footprints looks like on PCB:
+MCP stands for Microchip (in a meaning of ICDx RJ12 6-pin connector), and CTX - for Cortex (ARM) 2x5 IDC connector + adapter 2x5 -> 2x10 IDC standard jtag connector.
+
+If someone is interested to buy a pcb for adapter, or a ready adapter, you can contact me here. I never order a single PCB, and usually I do have few spare. I can ship it inside EU any time, and occasionally to UA. Donations are also always welcomedm if you found my project useful for yourself.
+
+This is how the footprints of tc2030, tc2030-nl, tc2050 and tc2050-nl are look like:
 ![alt text](http://www.thingamafob.com/wp-content/uploads/2012/12/IMG_7106-1024x682.jpg)
 
 -----
@@ -20,21 +23,22 @@ This is how tc2030, tc2030-nl, tc2050 and tc2050-nl footprints looks like on PCB
 # mcp2jlink
 
 TC2030-MCP to Segger JTag, target is ARM Cortex-M (SWD interface), tested on stm32f0, stm32f1xx, stm32f4xx, stm32f7xx.
+
 Just an adapter, 2 connectors on the PCB.
 ### parts:
 - RJ12 connector, I took from Farnel, part no 1654815
-- https://www.aliexpress.com/item/32890057619.html - 2x10 JTag Header, but I am not happy with it does not really looks like original one.
+- https://www.aliexpress.com/item/32890057619.html - 2x10 JTag Header, but I am not happy with it, it does not really looks like original one.
 #### Pinout:
 The pinout seems to be original, but I've never tested neither my boards with original cable, nor original boards with my cable (definitely works fine with my adapter and my pcb boards).
 | Pin | Signal | MCP2030 signal  |
-|:-:| - | - |
+|:----:| ----- | ----- |
 | 1 | SWD_OUTPUT | MCLR |
 | 2 | GND | Vcc |
 | 3 | SWD_CLK | Vss |
 | 4 | nRST (nRESET) | PgD |
 | 5 | SWD_IO | PgC |
 | 6 | N/C | PgM/NC |
-_I am not SWDO (pin #1) in my designs, the trace output works better and faster with RTT through SWD_CLK/SWD_IO pins_
+_I am not using SWDO (pin #1) in my designs, the trace output works better and faster with RTT through SWD_CLK/SWD_IO pins_
 
 #### Revision history:
 - Rev A - failure, deleted.
@@ -46,13 +50,14 @@ _I am not SWDO (pin #1) in my designs, the trace output works better and faster 
 # mcp2pickit
 
 TC2030-MCP to PICKit, targets are Microchip's pic1x, pic24, pic32 - any serie that suppose to work PICKit.
+
 Just an adapter, 2 connectors and PCB.
 ### parts:
 - RJ12 connector, I took from Farnel, part no 1654815
 - any 90-angle male 6x1 header (or 5x1 - for most of MCUs you can skip 6th pin) with step of 2.54mm
 #### Pinout is 1:1, so it is basically 
 | Pin | Signal | MCP2030 signal  |
-|:-:| - | - |
+|:----:| ----- | ----- |
 | 1 | MCLR | MCLR |
 | 2 | Vcc | Vcc |
 | 3 | Vss | Vss |
@@ -69,6 +74,7 @@ Just an adapter, 2 connectors and PCB.
 
 USB to UART converter (CP2102 based), 1A 3v3 power source to power up the Esp32 board, and RTS+DTR for EN and Boot0/IO0 control - same as original DevKits are using. No commercial programmer is needed.
 The EN and Boot0 should be pulled up to 3v3 through resistor of 10k.
+
 MCP-NL to ESP32 (in my case - ESP32-Wroom-32 module, should work fine on any ESP32 based module).
 ### parts:
 - RJ12 connector, I took from Farnel, part no 1654815
@@ -82,7 +88,7 @@ MCP-NL to ESP32 (in my case - ESP32-Wroom-32 module, should work fine on any ESP
 - resistor 0805, 10k - 4 pcs _(not sure if I will take 2 x 10k, 2 x 4k7 instead)_
 #### Pinout: no original one, so I did it this way:
 | Pin | Signal | MCP2030 signal  |
-|:-:| - | - |
+|:----:| ----- | ----- |
 | 1 | EN | MCLR |
 | 2 | Vcc (3v3 1A from PCB) | Vcc |
 | 3 | GND | Vss |
@@ -96,7 +102,7 @@ MCP-NL to ESP32 (in my case - ESP32-Wroom-32 module, should work fine on any ESP
 
 -----
 
-# mcp2r16c
+# mcp2r8c
 
 **(Not yet designed)**
 
