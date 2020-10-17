@@ -1,4 +1,5 @@
 # TagConnect
+
 ## TC2030-MCP and TC2050-CTX adapters for different boards.
 
 ![alt text](https://pbs.twimg.com/profile_images/1625182695/Tag-Connector_with_legs.jpg)
@@ -13,8 +14,11 @@ I can ship it inside EU any time, and occasionally to UA.
 
 This is how tc2030, tc2030-nl, tc2050 and tc2050-nl footprints looks like on PCB:
 ![alt text](http://www.thingamafob.com/wp-content/uploads/2012/12/IMG_7106-1024x682.jpg)
+
 -----
+
 # mcp2jlink
+
 TC2030-MCP to Segger JTag, target is ARM Cortex-M (SWD interface), tested on stm32f0, stm32f1xx, stm32f4xx, stm32f7xx.
 Just an adapter, 2 connectors on the PCB.
 ### parts:
@@ -31,12 +35,16 @@ The pinout seems to be original, but I've never tested neither my boards with or
 | 5 | SWD_IO | PgC |
 | 6 | N/C | PgM/NC |
 _I am not SWDO (pin #1) in my designs, the trace output works better and faster with RTT through SWD_CLK/SWD_IO pins_
+
 #### Revision history:
 - Rev A - failure, deleted.
 - Rev B - working version, PCBs are ready and tested.
 - Rev C - thermal settings for copper pouring is changed, will be ordered occasionally.
+
 -----
+
 # mcp2pickit
+
 TC2030-MCP to PICKit, targets are Microchip's pic1x, pic24, pic32 - any serie that suppose to work PICKit.
 Just an adapter, 2 connectors and PCB.
 ### parts:
@@ -51,10 +59,14 @@ Just an adapter, 2 connectors and PCB.
 | 4 | PgD | PgD |
 | 5 | PgC | PgC |
 | 6 | PgM/NC | PgM/NC |
+
 #### Revision history:
 - Rev A - ready, will be ordered occasionally (never tested yet)
+
 -----
+
 # mcp2esp32
+
 USB to UART converter (CP2102 based), 1A 3v3 power source to power up the Esp32 board, and RTS+DTR for EN and Boot0/IO0 control - same as original DevKits are using. No commercial programmer is needed.
 The EN and Boot0 should be pulled up to 3v3 through resistor of 10k.
 MCP-NL to ESP32 (in my case - ESP32-Wroom-32 module, should work fine on any ESP32 based module).
@@ -77,16 +89,21 @@ MCP-NL to ESP32 (in my case - ESP32-Wroom-32 module, should work fine on any ESP
 | 4 | PC-TxD -> ESP32-Rx | PgD |
 | 5 | PC-RxD <- ESP32-Tx | PgC |
 | 6 | Boot0/IO0 | PgM/NC |
+
 #### Revision history:
 - Rev A - ready, will be ordered occasionally (never tested yet)
 - next step - add ESD protection to USB.
+
 -----
+
 # mcp2r16c
 
 **(Not yet designed)**
 
-Renesas R5F21xxxx 15-bit MCUs, no original cable, so the pinout is an open question for now.
+Renesas R5F21xxxx 16-bit MCUs, no original cable, so the pinout is an open question for now.
+
 -----
+
 # ctx2msp430
 
 **(Not yet designed)**
