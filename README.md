@@ -18,6 +18,10 @@ If someone is interested to buy a pcb for adapter, or a ready adapter, you can c
 This is how the footprints of tc2030, tc2030-nl, tc2050 and tc2050-nl are look like:
 ![alt text](http://www.thingamafob.com/wp-content/uploads/2012/12/IMG_7106-1024x682.jpg)
 
+## TODO:
+
+- put part list into table, add links to aliexpress, farnell, digikey or mouser.
+
 -----
 
 # mcp2jlink
@@ -38,6 +42,7 @@ The pinout seems to be original, but I've never tested neither my boards with or
 | 4 | nRST (nRESET) | PgD |
 | 5 | SWD_IO | PgC |
 | 6 | N/C | PgM/NC |
+
 _I am not using SWDO (pin #1) in my designs, the trace output works better and faster with RTT through SWD_CLK/SWD_IO pins_
 
 #### Revision history:
@@ -49,7 +54,7 @@ _I am not using SWDO (pin #1) in my designs, the trace output works better and f
 
 # mcp2pickit
 
-TC2030-MCP to PICKit, targets are Microchip's pic1x, pic24, pic32 - any serie that suppose to work PICKit.
+TC2030-MCP to PICKit, targets are Microchip's pic1x, pic24, pic32 - any serie that suppose to work with PICKit.
 
 Just an adapter, 2 connectors and PCB.
 ### parts:
