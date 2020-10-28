@@ -1,8 +1,9 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('for SolidWorks'),'2;1');
-FILE_NAME('C:\\Work\\Projects\\TagConnect\\revC\\mcp2jlink.step',
-  '2020-10-17T18:32:18',('user'),(''),'Open CASCADE STEP processor 6.6',
+FILE_NAME(
+  'C:\\Work\\Projects\\TagConnect\\mcp2jlink\\revC\\mcp2jlink.step',
+  '2020-10-27T18:19:00',('user'),(''),'Open CASCADE STEP processor 6.6',
   'DipTrace','Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
 ENDSEC;
